@@ -3,15 +3,13 @@ import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function tabsLayout() {
   return (
-    <Tabs
-      screenOptions={{ tabBarActiveTintColor: "black", tabBarShowLabel: false }}
-    >
+    <Tabs screenOptions={{ tabBarShowLabel: false }}>
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
           tabBarIcon: ({ size, color }) => (
-            <Feather name="home" size={24} color="black" />
+            <Feather name="home" size={size} color={color} />
           ),
         }}
       />
