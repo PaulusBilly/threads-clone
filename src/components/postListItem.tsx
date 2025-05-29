@@ -21,7 +21,7 @@ const formatRelativeTime = (date: string) => {
 
 export default function PostListItem({ post }: { post: Post }) {
   return (
-    <Pressable className="flex-row p-4 border-b border-gray-800">
+    <Pressable className="flex-row p-4 border-b border-gray-800/60">
       {/* User Avatar */}
       <Image
         source={{ uri: post.user.image }}
@@ -47,14 +47,14 @@ export default function PostListItem({ post }: { post: Post }) {
             <MaterialCommunityIcons
               name="heart-outline"
               size={22}
-              color="gray"
+              color="#d1d5db"
             />
-            <Text className="text-gray-500 ml-1">0</Text>
+            <Text className="text-gray-300 ml-1">0</Text>
           </Pressable>
 
           <Pressable className="flex-row items-center">
-            <Ionicons name="chatbubble-outline" size={20} color="gray" />
-            <Text className="text-gray-500 ml-1">
+            <Ionicons name="chatbubble-outline" size={20} color="#d1d5db" />
+            <Text className="text-gray-300 ml-1">
               {post.replies?.length || 0}
             </Text>
           </Pressable>
@@ -63,13 +63,13 @@ export default function PostListItem({ post }: { post: Post }) {
             <MaterialCommunityIcons
               name="repeat-variant"
               size={22}
-              color="gray"
+              color="#d1d5db"
             />
-            <Text className="text-gray-500 ml-1">0</Text>
+            <Text className="text-gray-300 ml-1">0</Text>
           </Pressable>
 
           <Pressable className="flex-row items-center">
-            <Feather name="send" size={20} color="gray" />
+            <Feather name="send" size={20} color="#d1d5db" />
           </Pressable>
         </View>
       </View>
